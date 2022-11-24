@@ -33,6 +33,7 @@ Projeto de um website simples em ReactJS com Typesript que navegue pela api da I
 
 Esse é um projeto de Front-end e está disponível na Vercel:
 [Deployment](https://desafio-centi.vercel.app/).
+Siga os passos abaixo para rodar em sua máquina:
 
 ### Pré-requisitos
 
