@@ -11,7 +11,7 @@
  <a href="#features">Features</a> •
  <a href="#como-rodar-o-projeto">Como rodar o projeto</a> • 
  <a href="#tech-stack">Tech Stack</a> • 
- <a href="#autor">Author</a> • 
+ <a href="#autor">Autor</a> • 
 </p>
 
 ## Sobre
