@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+<h1 align="center">
+    🖼️ Desafio Centi Front-end 🖼️
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center"> 
+  Desafio Centi Front-end 🚀 Completo
+</h4>
 
-## Available Scripts
+<p align="center">
+ <a href="#about">Sobre</a> •
+ <a href="#features">Features</a> •
+ <a href="#how-it-works">Como rodar o projeto</a> • 
+ <a href="#tech-stack">Tech Stack</a> • 
+ <a href="#author">Author</a> • 
+</p>
 
-In the project directory, you can run:
+## Sobre
 
-### `npm start`
+laBoleria is a backend project made with NodeJS that manages the clients, cakes(products) and orders in a cake store! 🧁
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- [x] Register Clients
+- [x] Register Cakes
+- [x] Those cakes have Flavors
+- [x] Register and track orders
+- [x] Get all orders from a specific client
+- [x] Get all orders of a specific date
+- [x] Get the details of a specific order
+- [x] Track the delivery status of a order
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Como rodar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is a Backend project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pre-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before you begin, you will need to have the following tools installed on your machine:
+[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/).
+In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
 
-### `npm run eject`
+#### Runnig the backend (server)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Clone this repository
+$ git clone git@github.com:neves-gabriel/desafio-centi.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Access the project folder cmd/terminal
+$ cd desafio-centi
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# install the dependencies
+$ npm install
 
-## Learn More
+# Run the application in development mode
+$ npm run start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Tech Stack
+
+The following tools were used in the construction of the project:
+
+#### [](https://github.com/neves-gabriel/desafio-centi)**Server** ([NodeJS](https://nodejs.org/en/))
+
+- **[Express](https://expressjs.com/)**
+- **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+- **[dotENV](https://github.com/motdotla/dotenv)**
+- **[Joi](https://github.com/hapijs/joi)**
+- **[bcrypt](https://github.com/kelektiv/node.bcrypt.js)**
+- **[Day.js](https://github.com/iamkun/dayjs)**
+- **[PostgreSQL client for node.js](https://github.com/brianc/node-postgres)**
+
+> See the file [package.json](https://github.com/neves-gabriel/desafio-centi/blob/main/package.json)
+
+---
+
+## Author
+
+<a href="https://www.linkedin.com/in/gabriel-rodrigues-neves/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39607960?s=400&u=82b035c6ac7bdf750c568554dd4f6af500688e63&v=4" width="100px;" alt="Gabriel Neves"/>
+ <br />
+ <sub><b>Gabriel Neves</b></sub></a> <a href="https://www.linkedin.com/in/gabriel-rodrigues-neves/" title="LinkedIn"></a>
+ <br />
+ 
+[![Gmail Badge](https://img.shields.io/badge/-gabrielrn.mobres@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gabrielrn.mobres@gmail.com)](mailto:gabrielrn.mobres@gmail.com)
+
+---
