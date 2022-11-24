@@ -9,7 +9,7 @@
 <p align="center">
  <a href="#about">Sobre</a> •
  <a href="#features">Features</a> •
- <a href="#how-it-works">Como rodar o projeto</a> • 
+ <a href="#como-rodar-o-projeto">Como rodar o projeto</a> • 
  <a href="#tech-stack">Tech Stack</a> • 
  <a href="#author">Author</a> • 
 </p>
