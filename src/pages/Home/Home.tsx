@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactLoading from 'react-loading';
 
 import {
   HomePage,
@@ -29,6 +30,7 @@ export const Home = () => {
   const { width } = useWindowDimensions();
 
   const [pageNumber, setPageNumber] = useState(1);
+  const [loading, setLoading] = useState<'LOADING' | 'ERROR' | 'OK' | ''>('');
   const [postsData, setPostsData] = useState<PostData[]>([]);
   const [selectedSection, setSelectedSection] = useState<string>('hot');
   const [selectedSortOption, setSelectedSortOption] = useState<SortOption>({
@@ -67,29 +69,41 @@ export const Home = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const { postsData, status, success } = await getPostsService({
-        section: selectedSection,
-        sort: selectedSortOption.value,
-        window: selectedWindowOption.value,
-        page: 1,
-      });
-      if (success && status === 200) {
-        setPostsData(postsData);
+      setLoading('LOADING');
+      try {
+        const { postsData, status, success } = await getPostsService({
+          section: selectedSection,
+          sort: selectedSortOption.value,
+          window: selectedWindowOption.value,
+          page: 1,
+        });
+        if (success && status === 200) {
+          setLoading('OK');
+          setPostsData(postsData);
+        }
+      } catch (error) {
+        setLoading('ERROR');
       }
     };
     fetchPosts();
   }, [selectedSection, selectedSortOption, selectedWindowOption]);
 
   const fetchMorePosts = async () => {
-    const { postsData, status, success } = await getPostsService({
-      section: selectedSection,
-      sort: selectedSortOption.value,
-      window: selectedWindowOption.value,
-      page: pageNumber + 1,
-    });
-    if (success && status === 200) {
-      setPageNumber(pageNumber + 1);
-      setPostsData([...postsData]);
+    setLoading('LOADING');
+    try {
+      const { postsData, status, success } = await getPostsService({
+        section: selectedSection,
+        sort: selectedSortOption.value,
+        window: selectedWindowOption.value,
+        page: pageNumber + 1,
+      });
+      if (success && status === 200) {
+        setLoading('OK');
+        setPageNumber(pageNumber + 1);
+        setPostsData([...postsData]);
+      }
+    } catch (error) {
+      setLoading('ERROR');
     }
   };
 
@@ -118,10 +132,29 @@ export const Home = () => {
           setSelectedWindowOption={setSelectedWindowOption}
         />
       </TopContainer>
-      <PostsContainer
-        postsColumnsData={postsColumnsData}
-        postsContainerWidth={postsContainerWidth}
-      />
+
+      {loading === 'LOADING' && (
+        <ReactLoading
+          type={'spin'}
+          color={'#6272a4'}
+          height={330}
+          width={185}
+        />
+      )}
+
+      {loading === 'ERROR' && (
+        <div>
+          <h1>Erro ao carregar os posts</h1>
+        </div>
+      )}
+
+      {loading === 'OK' && (
+        <PostsContainer
+          postsColumnsData={postsColumnsData}
+          postsContainerWidth={postsContainerWidth}
+        />
+      )}
+
       <LoadMoreButton type="button" onClick={() => fetchMorePosts()}>
         Carregar mais posts
       </LoadMoreButton>
