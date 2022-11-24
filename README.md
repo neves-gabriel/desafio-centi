@@ -16,26 +16,23 @@
 
 ## Sobre
 
-laBoleria is a backend project made with NodeJS that manages the clients, cakes(products) and orders in a cake store! 🧁
+Projeto de um website simples em ReactJS com Typesript que que navegue pela api da IMGUR. 📷
 
 ---
 
 ## Features
 
-- [x] Register Clients
-- [x] Register Cakes
-- [x] Those cakes have Flavors
-- [x] Register and track orders
-- [x] Get all orders from a specific client
-- [x] Get all orders of a specific date
-- [x] Get the details of a specific order
-- [x] Track the delivery status of a order
+- [x] Mostre a galeria de imagens em uma grid de thumbnails;
+- [x] Mostre a descrição da imagem no thumbnail, ou em cima, ou em baixo;
+- [x] Deixe o usuário selecionar a seção (hot, top, user);
+- [x] Deixe o usuário selecionar parâmetros de window e sort.
 
 ---
 
 ## Como rodar o projeto
 
-This project is a Backend project.
+Esse é um projeto de Front-end e está disponível na Vercel:
+[Deployment] (https://desafio-centi.vercel.app/).
 
 ### Pre-requisitos
 
