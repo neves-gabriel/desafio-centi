@@ -36,9 +36,9 @@ Esse é um projeto de Front-end e está disponível na Vercel:
 
 ### Pre-requisitos
 
-Before you begin, you will need to have the following tools installed on your machine:
-[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/).
-In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
+[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/) e um gerenciador de pacotes como o [npm] (https://www.npmjs.com/).
+Além disso, é bom ter um editor para trabalhar com o código como [VSCode] (https://code.visualstudio.com/)
 
 #### Runnig the backend (server)
 
@@ -62,7 +62,7 @@ $ npm run start
 
 ## Tech Stack
 
-The following tools were used in the construction of the project:
+As seguintes ferramentas foram utilizadas na construção do projeto:
 
 #### [](https://github.com/neves-gabriel/desafio-centi)**Server** ([NodeJS](https://nodejs.org/en/))
 
