@@ -14,7 +14,7 @@ export const getPostsService = async (
   params.sort ? params.sort : (params.sort = 'viral');
   params.window ? params.window : (params.window = 'day');
   params.page ? params.page : (params.page = 1);
-  console.log(params);
+
   const options = {
     method: 'GET',
     url: `https://api.imgur.com/3/gallery/${params.section}/${params.sort}/${params.window}/${params.page}?showViral=false&mature=false&album_previews=true`,

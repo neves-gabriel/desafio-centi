@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import { HomePage, SectionButtonsContainer, TopContainer } from './Home.styles';
+import {
+  HomePage,
+  LoadMoreButton,
+  SectionButtonsContainer,
+  TopContainer,
+} from './Home.styles';
 import type { SectionOption, SortOption, WindowOption } from './Home.types';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -23,6 +28,7 @@ const windowOptions: WindowOption[] = WINDOW_OPTIONS;
 export const Home = () => {
   const { width } = useWindowDimensions();
 
+  const [pageNumber, setPageNumber] = useState(1);
   const [postsData, setPostsData] = useState<PostData[]>([]);
   const [selectedSection, setSelectedSection] = useState<string>('hot');
   const [selectedSortOption, setSelectedSortOption] = useState<SortOption>({
@@ -74,7 +80,18 @@ export const Home = () => {
     fetchPosts();
   }, [selectedSection, selectedSortOption, selectedWindowOption]);
 
-  console.log(postsContainerWidth);
+  const fetchMorePosts = async () => {
+    const { postsData, status, success } = await getPostsService({
+      section: selectedSection,
+      sort: selectedSortOption.value,
+      window: selectedWindowOption.value,
+      page: pageNumber + 1,
+    });
+    if (success && status === 200) {
+      setPageNumber(pageNumber + 1);
+      setPostsData([...postsData]);
+    }
+  };
 
   return (
     <HomePage>
@@ -105,6 +122,9 @@ export const Home = () => {
         postsColumnsData={postsColumnsData}
         postsContainerWidth={postsContainerWidth}
       />
+      <LoadMoreButton type="button" onClick={() => fetchMorePosts()}>
+        Carregar mais posts
+      </LoadMoreButton>
       <Footer />
     </HomePage>
   );
