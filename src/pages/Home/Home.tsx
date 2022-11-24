@@ -74,11 +74,13 @@ export const Home = () => {
     fetchPosts();
   }, [selectedSection, selectedSortOption, selectedWindowOption]);
 
+  console.log(postsContainerWidth);
+
   return (
     <HomePage>
       <Header />
       <TopContainer width={postsContainerWidth}>
-        <SectionButtonsContainer>
+        <SectionButtonsContainer width={postsContainerWidth}>
           {sectionsOptions.map((section: SectionOption) => (
             <SectionButton
               key={section.id}
