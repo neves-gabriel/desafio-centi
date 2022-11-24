@@ -32,28 +32,28 @@ Projeto de um website simples em ReactJS com Typesript que que navegue pela api 
 ## Como rodar o projeto
 
 Esse é um projeto de Front-end e está disponível na Vercel:
-[Deployment] (https://desafio-centi.vercel.app/).
+[Deployment](https://desafio-centi.vercel.app/).
 
-### Pre-requisitos
+### Pré-requisitos
 
 Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
-[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/) e um gerenciador de pacotes como o [npm] (https://www.npmjs.com/).
-Além disso, é bom ter um editor para trabalhar com o código como [VSCode] (https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e um gerenciador de pacotes como o [npm](https://www.npmjs.com/).
+Além disso, é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-#### Runnig the backend (server)
+#### Rodando o projeto
 
 ```bash
 
-# Clone this repository
+# Clone este repositório
 $ git clone git@github.com:neves-gabriel/desafio-centi.git
 
-# Access the project folder cmd/terminal
+# Acesse a pasta do projeto cmd/terminal
 $ cd desafio-centi
 
-# install the dependencies
+# Instale as dependências
 $ npm install
 
-# Run the application in development mode
+# Execute a aplicação no modo de desenvolvimento
 $ npm run start
 
 ```
@@ -64,15 +64,11 @@ $ npm run start
 
 As seguintes ferramentas foram utilizadas na construção do projeto:
 
-#### [](https://github.com/neves-gabriel/desafio-centi)**Server** ([NodeJS](https://nodejs.org/en/))
+#### [](https://github.com/neves-gabriel/desafio-centi)**Front-end** ([ReactJS](https://reactjs.org/))
 
-- **[Express](https://expressjs.com/)**
-- **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
-- **[dotENV](https://github.com/motdotla/dotenv)**
-- **[Joi](https://github.com/hapijs/joi)**
-- **[bcrypt](https://github.com/kelektiv/node.bcrypt.js)**
-- **[Day.js](https://github.com/iamkun/dayjs)**
-- **[PostgreSQL client for node.js](https://github.com/brianc/node-postgres)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Axios](https://axios-http.com/)**
+- **[StyledComponents](https://styled-components.com/)**
 
 > See the file [package.json](https://github.com/neves-gabriel/desafio-centi/blob/main/package.json)
 
