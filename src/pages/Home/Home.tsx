@@ -89,7 +89,6 @@ export const Home = () => {
   }, [selectedSection, selectedSortOption, selectedWindowOption]);
 
   const fetchMorePosts = async () => {
-    setLoading('LOADING');
     try {
       const { postsData, status, success } = await getPostsService({
         section: selectedSection,
@@ -98,7 +97,6 @@ export const Home = () => {
         page: pageNumber + 1,
       });
       if (success && status === 200) {
-        setLoading('OK');
         setPageNumber(pageNumber + 1);
         setPostsData([...postsData]);
       }
