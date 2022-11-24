@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { HomePage, SectionButtonsContainer, TopContainer } from './Home.styles';
 import type { SectionOption, SortOption, WindowOption } from './Home.types';
+import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { PostsContainer } from '../../components/PostsContainer';
 import { SectionButton } from '../../components/SectionButton';
@@ -102,6 +103,7 @@ export const Home = () => {
         postsColumnsData={postsColumnsData}
         postsContainerWidth={postsContainerWidth}
       />
+      <Footer />
     </HomePage>
   );
 };
