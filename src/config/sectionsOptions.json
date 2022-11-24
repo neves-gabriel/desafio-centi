@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "value": "hot",
+    "label": "Mais populares",
+    "color": "#ff6961",
+    "icon": "AiOutlineFire"
+  },
+  {
+    "id": 2,
+    "value": "top",
+    "label": "Mais votados",
+    "color": "#C1E1C1",
+    "icon": "BiUpvote"
+  },
+  {
+    "id": 3,
+    "value": "user",
+    "label": "Enviados por usuários",
+    "color": "#A7C7E7",
+    "icon": "AiOutlineUser"
+  }
+]

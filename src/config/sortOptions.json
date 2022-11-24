@@ -1,0 +1,18 @@
+[
+  {
+    "value": "viral",
+    "label": "Populares"
+  },
+  {
+    "value": "top",
+    "label": "Melhores"
+  },
+  {
+    "value": "time",
+    "label": "Novos"
+  },
+  {
+    "value": "rising",
+    "label": "Em alta"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "value": "day",
+    "label": "Dia"
+  },
+  {
+    "value": "week",
+    "label": "Semana"
+  },
+  {
+    "value": "month",
+    "label": "Mês"
+  },
+  {
+    "value": "year",
+    "label": "Ano"
+  },
+  {
+    "value": "all",
+    "label": "Todos"
+  }
+]
