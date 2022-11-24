@@ -16,7 +16,7 @@
 
 ## Sobre
 
-Projeto de um website simples em ReactJS com Typesript que que navegue pela api da IMGUR. 📷
+Projeto de um website simples em ReactJS com Typesript que navegue pela api da IMGUR. 📷
 
 ---
 
